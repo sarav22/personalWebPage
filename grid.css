@@ -1,0 +1,30 @@
+/*Sets grid layout to the first section to display the image to the right*/
+
+/*Specificity: 0,1,1*/
+section:first-of-type {
+  display: grid;
+}
+/*Specificity: 0,1,2*/
+section:first-of-type h2 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+/*Specificity: 0,1,2*/
+section:first-of-type p {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  padding-right: 15%;
+}
+/*Specificity: 0,1,2*/
+section:first-of-type img {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: auto;
+  width: 70%;
+}
